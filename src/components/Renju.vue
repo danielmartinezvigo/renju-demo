@@ -109,23 +109,23 @@ export default {
 }
 .celd {
   display: block;
-  width: 41px;
-  height: 41px;
+  width: 34px;
+  height: 34px;
   color: black;
   cursor: pointer;
-  text-align: center;
-  line-height: 41px;
+  text-align: right;
+  line-height: 43px;
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   background: rgba(202, 123, 5, 0.5);
 }
 .row .celd::after {
   content: "";
   position: absolute;
   top: 20px;
-  left: 0;
+  left: 0px;
   height: 1px;
-  width: 41px;
+  width: 34px;
   background-color: black;
   z-index: -1;
 }
@@ -134,7 +134,7 @@ export default {
   position: absolute;
   top: 0px;
   left: 20px;
-  height: 41px;
+  height: 34px;
   width: 1px;
   background-color: black;
   z-index: -1;
@@ -143,12 +143,19 @@ export default {
   top: 20px;
 }
 .row:last-child .celd::before {
-  top: -20px;
+  top: -13px;
+}
+.row:last-child .celd {
+  height: 41px;
 }
 .row .celd:first-child::after {
   left: 20px;
 }
 .row .celd:last-child::after {
-  left: -20px;
+  left: -13px;
+}
+.row .celd:last-child {
+  width: 41px;
+  text-align: center;
 }
 </style>
